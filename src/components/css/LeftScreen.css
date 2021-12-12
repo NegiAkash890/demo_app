@@ -1,0 +1,111 @@
+.left_container {
+  min-width: 300px;
+  border: 2px solid #eee;
+  height: 100vh;
+}
+
+#filter {
+  padding: 1rem;
+  font-size: 1rem;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.left_container h3 {
+  font-weight: 200;
+  margin: 0px;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  padding: 1rem 1rem;
+  border-top: 1px solid rgb(194, 194, 194);
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.gender_filter,
+.brand_filter,
+.color_filter {
+  border-collapse: collapse;
+  display: flex;
+  padding: 0rem 0.8rem;
+  margin-top: 1rem;
+  color: rgba(26, 22, 22, 0.561);
+  flex-direction: column;
+}
+
+input {
+  margin-right: 0.5rem;
+}
+
+.gender_filter > label,
+.color_filter > label,
+.brand_filter > label {
+  display: flex;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  border: 0px;
+  width: 10%;
+  height: 1.2rem;
+}
+
+.button_grp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#filter_button {
+  padding: 1rem 2rem;
+  margin: 3rem 1rem;
+  width: 90%;
+  border: none;
+  background-color: purple;
+  color: white;
+}
+
+#reset{
+  padding: 1rem;
+  border: none;
+  background-color: #eee;
+}
+/* Mobile Navigation */
+.mobile_left_container {
+  background-color: white;
+  z-index: 10001;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  top: 93vh;
+  height: 45px;
+}
+.sort_tab, .filter_tab{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 0.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.sort_tab .header > button,
+.filter_tab .header > button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #000000a9;
+  font-size: 0.6rem;
+  margin-left: 0.3rem;
+  font-weight: lighter;
+}

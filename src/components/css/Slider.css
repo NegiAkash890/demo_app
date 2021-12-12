@@ -1,0 +1,88 @@
+.slider {
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: gray;
+  transition: 0.8s ease-in all;
+  overflow-y: scroll;
+}
+
+.active {
+  display: block;
+  background-color: #eee;
+}
+
+.hide {
+  transform: translateX(50vw);
+}
+
+.cart_container {
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: white;
+}
+
+.slider_info {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#slider_button {
+  border: none;
+  background-color: none;
+  font-size: 1.3rem;
+}
+
+#remove {
+  padding: 0.4rem 0.8rem;
+  color: white;
+  background-color: red;
+  border: none;
+}
+
+.wishlist_container {
+  display: flex;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: white;
+}
+
+.wishlist_container img {
+  width: 150px;
+  height: 200px;
+  margin-right: 0.5rem;
+}
+
+.size_list {
+  display: flex;
+  list-style: none;
+}
+
+.size_list > li {
+  margin-right: 0.4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .slider {
+    width: 50vw;
+    height: 100vh;
+  }
+  .hide {
+    transform: translateX(100vw);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    width: 100vw;
+    height: 100vh;
+  }
+  .hide {
+    transform: translateX(100vw);
+  }
+}
