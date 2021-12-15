@@ -24,9 +24,9 @@ ReactDOM.render(
         <Provider store={store}>
           <NavBar />
           <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="product">
-              <Route path=":pid" element={<ProductInfo />} />
+            <Route exact path="/" element={<App />} />
+            <Route exact path="product">
+              <Route exact path=":pid" element={<ProductInfo />} />
             </Route>
           </Routes>
         </Provider>

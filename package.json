@@ -1,5 +1,5 @@
 {
-  "homepage": "https://NegiAkash890.github.io/demo_app",
+  "homepage": "https://NegiAkash890.github.io/web_clone",
   "name": "myntra",
   "version": "0.1.0",
   "private": true,
@@ -23,8 +23,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
